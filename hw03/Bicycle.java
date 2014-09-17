@@ -42,6 +42,17 @@ public class Bicycle {
     
     speed = distanceTrip/hours;
     
+    distanceTrip*=100;
+    distanceTrip = (int)distanceTrip;
+    distanceTrip = (double)distanceTrip;
+    distanceTrip/=100;
+    
+    
+    speed*=100;
+    speed = (int)speed;
+    speed = (double)speed;
+    speed/=100;
+    
     System.out.println("The distance was " + distanceTrip + "miles and took " + minutes + " minutes.The average mph was " + speed);
     
         }
